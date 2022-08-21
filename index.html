@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valyrian Speak</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Josefin Sans", cursive;
+        color: #333333;
+      }
+
+      button {
+        background-color: var(--primary);
+        border: none;
+        margin: 1rem 0rem;
+        padding: 1rem 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        margin-left: 2.6rem;
+      }
+
+      :root {
+        --primary: #a71d5279;
+        --black: #333333;
+        --width-break: 600px;
+      }
+
+      textarea {
+        width: 80%;
+        height: 15vh;
+        display: block;
+        margin: auto;
+        padding: 1rem;
+        margin-top: 2rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      nav {
+        display: block;
+        text-align: center;
+        background-color: var(--primary);
+      }
+
+      main {
+        margin: auto;
+        padding: 1rem;
+        max-width: var(--width-break);
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 1rem;
+        background-color: var(--primary);
+        text-align: center;
+      }
+
+      footer p {
+        max-width: var(--width-break);
+        margin: auto;
+      }
+
+      #output {
+        border: 1px solid black;
+        height: 10vh;
+        width: 80%;
+        margin: auto;
+        padding: 1rem;
+        margin-top: 0.5rem;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div style="font-size: 2rem; padding: 1rem">Valyrian Talk</div>
+    </nav>
+    <main>
+      <textarea
+        id="txt-input"
+        placeholder="Type your message here which you want to convert to Valyrian language"
+      ></textarea>
+      <button id="btn-translate">Translate to Valyrian language</button>
+      <div style="margin-left: 2.4rem">Translation will come here 👇</div>
+      <div id="output" style="padding: 1rem; font-size: large"></div>
+      <script src="/app.js" type="text/javascript"></script>
+    </main>
+    <footer>
+      <div style="font-size: x-large">about</div>
+      <p>
+        Convert from English to Valyrian. The Valyrian languages are a fictional
+        language family in the A Song of Ice and Fire series of fantasy novels
+        by George R. R. Martin, and in their television adaptation Game of
+        Thrones.
+      </p>
+    </footer>
+  </body>
+</html>
